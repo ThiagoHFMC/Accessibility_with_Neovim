@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Acessibilidade com Neovim</title>
+</head>
+
+<style>
+    body {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>Comandos para copiar e colar</h1>
+    <ul>
+        <li><code>yy</code> - Copiar (yank) a linha atual.</li>
+        <li><code>2yy</code> - Copiar (yank) a linha atual e a linha abaixo dela (um total de 2 linhas).</li>
+        <li><code>yw</code> - Copiar (yank) a partir da posição do cursor até o início da próxima palavra.</li>
+        <li><code>yiw</code> - Copiar (yank) a palavra completa sob o cursor.</li>
+        <li><code>yaw</code> - Copiar (yank) a palavra sob o cursor juntamente com o espaço antes ou depois dela.</li>
+        <li><code>y$</code> ou <code>Y</code> - Copiar (yank) da posição do cursor até o final da linha.</li>
+        <li><code>p</code> - Colar (paste) o conteúdo da área de transferência após a posição do cursor.</li>
+        <li><code>P</code> - Colar (paste) o conteúdo da área de transferência antes da posição do cursor.</li>
+        <li><code>gp</code> - Colar (paste) o conteúdo da área de transferência após a posição do cursor e deixar o cursor após o texto colado.</li>
+        <li><code>gP</code> - Colar (paste) o conteúdo da área de transferência antes da posição do cursor e deixar o cursor após o texto colado.</li>
+        <li><code>dd</code> - Apagar (cut) a linha atual.</li>
+        <li><code>2dd</code> - Apagar (cut) a linha atual e a linha abaixo dela (um total de 2 linhas).</li>
+    </ul>
+    
+    <a href="./main.html">Voltar para a página principal</a>
+
+</html>
