@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acessibilidade com Neovim</title>
+</head>
+
+<script>
+
+    function copy() {
+
+        var text = document.getElementById("code").textContent
+        navigator.clipboard.writeText(text);
+
+    }
+
+</script>
+
+<style>
+    body {
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>Comandos para movimentação parte 4</h1>
+    <ul>
+        <li tabindex="1">Para encontrar e ir para a próxima (ou anterior) ocorrência de um caractere, use |f| e |F|, por exemplo, |fo| encontra o próximo "o".
+            Você pode combinar f com um número. Por exemplo, você pode encontrar a 3ª ocorrência de 'q' com |3fq|</li>
+        <li tabindex="1">Em texto estruturado com parênteses ou colchetes, |(| ou |{| ou |[|, use |%| para pular para o parêntese ou colchete correspondente.</li>
+        <li style="text-align: left;" tabindex="3">
+        <pre id="code">
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num1, num2, soma;
+
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+
+    soma = num1 + num2;
+
+    printf("A soma de %d e %d é: %d\n", num1, num2, soma);
+
+    return 0;
+}     </pre>
+        </li>
+        <li><button onclick="copy()">Copiar código</button></li>
+    </ul>
+    
+    <ul>
+        <li><a href="./insertion.html">Próxima pagina</a></li>
+        <li><a href="./navegation02.html">Pagina anterior</a></li>
+        <li><a href="./index.html">Voltar para a página principal</a></li>
+    </ul>
+</html>
