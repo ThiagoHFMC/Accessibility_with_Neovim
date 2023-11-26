@@ -38,19 +38,24 @@
 </style>
 
 <body>
-    <h1>Modos básicos</h1>
+    <h1>Comandos para movimentação por palavras parte 1</h1>
     <ul>
-        <li tabindex="1">O Vim tem dois modos básicos. Um é o modo |inserir|, no qual você escreve texto como se fosse em um editor de texto normal.
-            O outro é o modo |normal|, que oferece maneiras eficientes de navegar e manipular o texto.
-            A qualquer momento, você pode ver em qual modo está na barra de status, localizada no topo do editor.
-            Para mudar entre os modos, use |Esc| para o modo normal e |i| para o modo de inserção.
-            Vamos tentar!</li>
-        <li style="text-align: left;" tabindex="2">Exercício: Faça uma inserção dentro da função printf() com um texto considerando o código abaixo.</li>
+        <li tabindex="1">Para navegar pelo texto em termos de palavras, você pode usar as teclas |w|, |b| e |e| (também W, B, E no Vim real).
+            |w| move para o início da próxima palavra; |e| move para o fim da palavra; e |b| move para o início da palavra.</li>
+        <li style="text-align: left;" tabindex="2">Exercício: Altere o nome da função que foi chamada dentro da função "main" que foi chamada com o nome incorreto. Utilize as teclas
+            |w|, |b| e |e| para se movimentar pelo texto.
+        </li>
         <li style="text-align: left;" tabindex="3">
         <pre id="code">
 #include &lt;stdio.h&gt;
+
+void minhaFuncao() {
+    printf("Esta é minha função!\n");
+}
+
 int main() {
-    printf("");
+    midFuncao(); // Chamada da função com nome incorreto
+    
     return 0;
 }
         </pre>
@@ -59,7 +64,8 @@ int main() {
     </ul>
     
     <ul>
-        <li><a href="./moveCursor.html">Próxima pagina</a></li>
+        <li><a href="./navegation02.html">Próxima pagina</a></li>
+        <li><a href="./moveCursor.html">Pagina anterior</a></li>
         <li><a href="./index.html">Voltar para a página principal</a></li>
     </ul>
 </html>
