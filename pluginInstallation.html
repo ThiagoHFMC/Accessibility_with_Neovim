@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acessibilidade com Neovim</title>
+</head>
+
+<script>
+
+    function copy() {
+
+        var text = document.getElementById("code").textContent
+        navigator.clipboard.writeText(text);
+
+    }
+
+</script>
+
+<style>
+    body {
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>Instalação do plugin do neovim no Visual Studio Code (VSCode)</h1>
+    <ul>
+        <li tabindex="1">Passo 1. Primeiro, abra o Visual Studio Code</li>
+        <li tabindex="2">Passo 2. Para navegar a aba de plugins, pressione CONTROL + SHIFT + X</li>
+        <li tabindex="3">Passo 3. Pesquise o plugin chamado "vim". É o primeiro que aparece na pesquisa, sua descrição é "Vim emulation for Visual Studio Code".</li>
+        <li tabindex="4">Passo 4. Instale o plugin clicando em Instalar e reinicie o VSCode (Você pode fazer isso clicando no botão "Reload Required ou Reinicialização necessária).</li>
+        <li tabindex="5">Passo 5. Quando você reiniciar o VSCode, o plugin estará ativo. Agora, precisamos configurar ele. Pressione CONTROL + , (virgula) para abrir a página de configuração do VSCode</li>
+        <li tabindex="6">Passo 6. Para entrar nas configurações do plugin do Vim, digite o seguinte e aperte Enter em seguida: @ext:vscodevim.vim</li>
+        <li tabindex="7">Passo 7. Navegue pressionando TAB até onde estiver escrito "Vim: Override Copy". Ative esta opção. Isto vai fazer com que você possa colar códigos de fora para dentro do VSCode.</li>
+        <li tabindex="8">Passo 8. Após ativar a opção, você pode pressionar CONTROL + W para fechar a página de configuração do VSCode, em seguida, pressione CONTROL + SHIFT + E para voltar ao explorer do VSCode.</li>
+        <li tabindex="9">Passo 9. Crie um arquivo para seguir os próximos passos do tutorial.</li>
+    </ul>
+    
+    <ul>
+        <li><a href="./index.html">Voltar para a página principal</a></li>
+    </ul>
+</html>
