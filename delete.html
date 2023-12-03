@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acessibilidade com Neovim</title>
+</head>
+
+<script>
+
+    function copy() {
+
+        var text = document.getElementById("code").textContent
+        navigator.clipboard.writeText(text);
+
+    }
+
+</script>
+
+<style>
+    body {
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>Comandos para deletar</h1>
+    <ul>
+        <li tabindex="1">|d| é o comando de deletar. Você pode combiná-lo com movimentos, por exemplo, |dw| deleta a primeira palavra à direita do cursor</li>
+        <li tabindex="1">Para repetir o comando anterior, basta pressionar |.|</li>
+        <li tabindex="1">Exercicio: Primeiro, remova duas palavras com |d2w|. Depois, remova o resto das palavras nesta linha com |.| Utilizando o mesmo código do exercício anterior.</li>
+        <li style="text-align: left;" tabindex="3">
+        <pre id="code">
+#include &lt;stdio.h&gt;
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+int multiplicacao(int a, int b) {
+    return a * b;
+}
+
+int main() {
+    int num1 = 5;
+    int num2 = 3;
+
+    int resultado_soma = soma(num1, num2);
+    printf("A soma de %d e %d é: %d\n", num1, num2, resultado_soma);
+
+    int resultado_multiplicacao = multiplicacao(num1, num2);
+    printf("O produto de %d e %d é: %d\n", num1, num2, resultado_multiplicacao);
+
+    return 0;
+}     </pre>
+        </li>
+        <li><button onclick="copy()">Copiar código</button></li>
+    </ul>
+    
+    <ul>
+        <li><a href="./insertion.html">Próxima pagina</a></li>
+        <li><a href="./navegation06.html">Pagina anterior</a></li>
+        <li><a href="./index.html">Voltar para a página principal</a></li>
+    </ul>
+</html>

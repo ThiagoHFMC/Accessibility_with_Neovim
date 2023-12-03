@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acessibilidade com Neovim</title>
+</head>
+
+<script>
+
+    function copy() {
+
+        var text = document.getElementById("code").textContent
+        navigator.clipboard.writeText(text);
+
+    }
+
+</script>
+
+<style>
+    body {
+        text-align: left;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <h1>Comandos para movimentação parte 7</h1>
+    <ul>
+        <li tabindex="1">A busca de texto é uma parte vital de qualquer editor de texto. No Vim, você pressiona |/| e digita o texto que está procurando. Você pode repetir a busca por ocorrências seguintes e anteriores com |n| e |N|, respectivamente. Para casos de uso avançados, é possível usar expressões regulares que ajudam a encontrar textos de formatos específicos (no Vim real).
+             Vamos tentar uma busca simples de texto. </li>
+        <li tabindex="1">Exercicio: Procure por |int| e encontre as ocorrências subsequentes com |n|.</li>
+        <li style="text-align: left;" tabindex="3">
+        <pre id="code">
+#include &lt;stdio.h&gt;
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+int multiplicacao(int a, int b) {
+    return a * b;
+}
+
+int main() {
+    int num1 = 5;
+    int num2 = 3;
+
+    int resultado_soma = soma(num1, num2);
+    printf("A soma de %d e %d é: %d\n", num1, num2, resultado_soma);
+
+    int resultado_multiplicacao = multiplicacao(num1, num2);
+    printf("O produto de %d e %d é: %d\n", num1, num2, resultado_multiplicacao);
+
+    return 0;
+}     </pre>
+        </li>
+        <li><button onclick="copy()">Copiar código</button></li>
+    </ul>
+    
+    <ul>
+        <li><a href="./delete.html">Próxima pagina</a></li>
+        <li><a href="./navegation05.html">Pagina anterior</a></li>
+        <li><a href="./index.html">Voltar para a página principal</a></li>
+    </ul>
+</html>
