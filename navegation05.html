@@ -38,31 +38,28 @@
 </style>
 
 <body>
-    <h1>Comandos para inserção de texto</h1>
+    <h1>Comandos para movimentação parte 6</h1>
     <ul>
-        <li tabindex="1">Você pode inserir texto várias vezes.
-            Por exemplo, um sublinhado de um cabeçalho pode consistir em 10 |-|s.
-            ----------
-            Com |30i-| |Esc|, não é necessário pressionar |-| 30 vezes.,
-
-        </li>
-        <li style="text-align: left;" tabindex="2">Exercício: insira |go| três vezes (clique 3, i, g, o , ESC nesta ordem) dentro do "printf" do código abaixo.
-        </li>
+        <li tabindex="1">|gg| te leva para o início do arquivo; |G| para o final.</li>
+        <li tabindex="1">Para ir diretamente para uma linha específica, digite seu |número de linha| junto com |G|.</li>
+        <li tabindex="1">Exercicio: vá para o início deste código com |gg| e depois volte para o final com |G|.</li>
         <li style="text-align: left;" tabindex="3">
         <pre id="code">
 #include &lt;stdio.h&gt;
+
 int main() {
-    printf("");
+
+    printf("Vá para o início do arquivo e depois volte para o final.");
+
     return 0;
-}
-        </pre>
+}     </pre>
         </li>
         <li><button onclick="copy()">Copiar código</button></li>
     </ul>
     
     <ul>
-        <li><a href="./navegation03.html">Próxima pagina</a></li>
-        <li><a href="./navegation05.html">Pagina anterior</a></li>
+        <li><a href="./insertion.html">Próxima pagina</a></li>
+        <li><a href="./navegation04.html">Pagina anterior</a></li>
         <li><a href="./index.html">Voltar para a página principal</a></li>
     </ul>
 </html>
